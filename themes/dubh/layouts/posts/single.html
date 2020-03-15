@@ -1,0 +1,37 @@
+{{ define "main" }}
+<article class="standalone">
+	<header>
+		<h1 class="article-heading">{{ .Title }}</h1>
+		{{ partial "post-date.html" . }}
+	</header>
+	{{ .Content }}
+	<footer role="contentinfo">
+		<div class="taxonomical-location">
+			{{ with index .Params.categories 0}}
+			<div class="category">
+				<p>Posted in <a href="/categories/{{ . }}">{{ . }}</a></p>
+			</div>
+			{{ end }}
+			{{ with .Params.tags }}
+			<ul class="tags">
+				{{ range . }}
+				<li><a href="/tags/{{ . }}">{{ . }}</a></li>
+				{{ end }}
+			</ul>
+			{{ end }}
+		</div>
+		<div class="license">
+			<div class="textual">
+				<p>
+					<a href="{{ .Permalink }}">{{ .Title }}</a> by <a href="{{ .Site.BaseURL }}" rel="cc:attributionURL">{{ .Site.Author.name }}</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+				</p>
+			</div>
+			<div class="icon">
+				<p>
+					<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+				</p>
+			</div>
+		</div>
+	</footer>
+</article>
+{{ end }}

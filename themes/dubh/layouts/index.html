@@ -1,0 +1,11 @@
+{{ define "main" }}
+{{ range first 10 .Site.RegularPages }}
+<article class="list">
+	<header>
+		<h1><a class="article-heading" href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+		{{ partial "post-date.html" . -}}
+	</header>
+	<p>{{ .Summary }}...</p>
+</article>
+{{ end }}
+{{ end }}

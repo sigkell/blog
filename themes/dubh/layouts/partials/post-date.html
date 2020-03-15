@@ -1,0 +1,6 @@
+<p>
+	Published <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Monday, January 2 2006" }}</time>.
+	{{ with .Lastmod }}<br/>
+	Last updated <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "Monday, January 2 2006" }}</time>.
+	{{ end }}
+</p>
