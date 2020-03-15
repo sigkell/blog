@@ -1,3 +1,22 @@
+DefaultContentLanguage = "en-ie"
 baseURL = "https://blog.sigkell.xyz/"
 languageCode = "en-ie"
-title = "Fionn Kelleher"
+title = "try; accept"
+theme = "dubh"
+enableGitInfo = true
+enableEmoji = true
+
+copyright = "Unless otherwise specified, content on this site is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License by Fionn Kelleher."
+
+[params]
+	Subtitle = "Musings, from somewhere in the world."
+	GitHub = "sigkell"
+	Twitter = "sigkell"
+
+[taxonomies]
+	category = "categories"
+	tag = "tags"
+
+[author]
+	name = "Fionn Kelleher"
+	email = "fionn@sigkell.xyz"
