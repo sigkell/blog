@@ -6,8 +6,9 @@
 	padding: 0.6em;
 }
 
-p code {
-	background: green;
+:not(pre) > code {
+	background: skyblue;
+	color: black;
 	padding: 0.14em;
 	margin: 0.14em;
 	box-sizing: border-box;
