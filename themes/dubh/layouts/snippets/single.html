@@ -8,7 +8,7 @@
     {{ $dir := .Dir }}
     {{ range( where (readDir (path.Join "content" .Dir)) "Name" "!=" "index.md") }}
         <h1>{{ .Name }}</h1>
-        {{ highlight (readFile (path.Join "/content" $dir .Name)) (index (split .Name ".") 1) "linenos=table" }}
+        {{ highlight (readFile (path.Join "/content" $dir .Name)) (index (sort (split .Name ".") "" "desc" ) 0) "linenos=table" }}
     {{ end }}
 	<footer role="contentinfo">
 		<div class="taxonomical-location">
