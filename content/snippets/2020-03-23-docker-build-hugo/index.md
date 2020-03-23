@@ -3,7 +3,7 @@ title: "Building a Hugo website with Docker + GitHub Webhooks"
 date: 2020-03-23T15:49:51Z
 slug: docker-hugo-build
 categories: [meta]
-tags: [hello]
+tags: []
 ---
 
 I don't currently have use for fancy CI/CD systems personally, so I've a very simple method of deploying this [Hugo](https://gohugo.io/)-based blog.

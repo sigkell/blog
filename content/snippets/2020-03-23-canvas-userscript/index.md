@@ -3,7 +3,7 @@ title: "UCC Canvas Assignments to TaskWarrior Commands"
 date: 2020-03-23T15:02:34Z
 slug: canvas-to-todo
 categories: [meta]
-tags: [hello]
+tags: []
 ---
 
 This is a very crudely coded UserScript to convert the default listing of assignments on Canvas' dashboard to a series of [TaskWarrior] commands that can be copy/pasted to a terminal. It's for use specifically on UCC's Canvas platform, but may work on other Canvas installations out of the box.
